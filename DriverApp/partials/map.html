@@ -1,0 +1,37 @@
+<div class="header-offset">
+	<h1>Driver 2210</h1>
+	<h2>Name: John</h2>
+  <ng-map zoom="11" center="[49.266274,-123.102991]">
+    <!-- <marker position="[49.283799,-123.123909]" /> -->
+<!--         <directions
+          draggable="false"
+          panel="directions-panel"
+          travel-mode="DRIVING"
+          origin="[49.266274,-123.102991]"
+          destination="[49.283799,-123.123909]">
+        </directions>
+                <custom-marker id="start"
+          position="1135 Karamea-Kohaihai Rd, Kahurangi National Park, Tasman">
+          <div> Start Here </div>
+        </custom-marker>
+        <custom-marker id="end"
+          position="Pier St, Jackson Bay, West Coast, New Zeland">
+          <div> Ends Here </div>
+      </custom-marker> -->
+        <directions 
+          draggable="true"
+          panel="directions-panel"
+          travel-mode="DRIVING"
+          waypoints="{{wayPoints}}"
+          origin="[49.266274,-123.102991]"
+          destination="[49.266274,-123.102991]">
+        </directions>
+<!--     <marker position="[49.270530,-123.134760]" />
+    <marker position="[49.259893,-123.146392]" /> 
+    <marker position="[49.238715,-123.102361]" />
+    <marker position="[49.261798,-123.232823]" />
+    <marker position="[49.284870,-123.132396]" />
+    <marker position="[49.228081,-123.068521]" /> -->
+    <control name="overviewMap" opened="true" />
+  </ng-map> 
+</div>

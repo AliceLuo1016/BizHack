@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+html, body
+{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+header
+{
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #003b64;
+  text-align: center;
+  z-index: 10;
+}
+
+header img
+{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+}
+
+.header-offset
+{
+  position: relative;
+  margin: 50px auto 0 auto;
+}
+
+.btn-primary
+{
+  background-color: #ffe000;
+  color: #2e3337;
+  border-color: #ffe000;
+  font-weight: bold;
+}
+
+#accept-page
+{
+  position: relative;
+  padding: 30px 5px;
+}
+   
+#accept-page form
+{
+  line-height: 26px;
+  text-align: center;
+}
+
+#accept-page form button
+{
+  margin: 20px auto;
+}

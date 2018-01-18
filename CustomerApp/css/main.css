@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+html, body
+{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+header
+{
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #003b64;
+  text-align: center;
+  z-index: 10;
+}
+
+header img
+{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+}
+
+.header-offset
+{
+  position: relative;
+  margin: 50px auto 0 auto;
+}
+
+.btn-primary
+{
+  background-color: #ffe000;
+  color: #2e3337;
+  border-color: #ffe000;
+  font-weight: bold;
+}
+
+.btn-secondary
+{
+  background-color: #007fd8;
+  color: #fff;
+  border-color: #007fd8;
+  font-weight: bold;
+}
+
+#customer-info-page
+{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+}
+
+#customer-info-page form
+{
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#customer-info-page button
+{
+  position: relative;
+  margin: 10px auto;
+}
+
+#availability-page 
+{
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+#availability-page p
+{
+  position: relative;
+  margin: 20px auto 10px auto;
+}
+
+#availability-page span
+{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#availability-page button
+{
+  width: 90%;
+  max-width: 250px;
+  margin: 10px auto;
+}
+
+#confirm-page
+{
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#confirm-page ng-map
+{
+  height: 200px;
+  margin: 20px auto;
+}
+
+#confirm-page p
+{
+  position: relative;
+  margin: 20px auto;
+}

@@ -1,0 +1,26 @@
+<div id="confirm-page" class="header-offset">
+
+  <h1>Confirm Request Page</h1>
+  <ng-map zoom="11" center="[40.74, -74.18]">
+    <marker position="[40.74, -74.18]" />
+    <shape name="circle" radius="200" center="[40.74,-74.18]" radius="4000" />
+    <control name="overviewMap" opened="true" />
+  </ng-map> 
+  
+  <p>
+    Please confirm that the following details are correct:
+    <span>
+    <br><br>
+      <b>Customer ID:</b> <span ng-bind="customerID"></span><br>
+      <b>Name:</b> <span ng-bind="customerName"></span> <br>
+      <b>Address:</b> <span ng-bind="customerAddress"></span> <br>
+      <b>Phone Number:</b> <span ng-bind="customerPhone"></span> <br>
+      <b>Time Frame:</b> <span ng-bind="timeFrame"></span> <br>
+    </span>
+  </p>
+  
+  <button type="button" class="btn btn-primary">Confirm Request</button>
+  
+  <button type="button" class="btn btn-secondary">Cancel</button>
+  
+</div>

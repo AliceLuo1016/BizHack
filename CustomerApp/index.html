@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Best Buy Customer App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body ng-app="customerApp">
+        <div ng-include='"templates/header.html"'></div>
+        <div ng-view></div>
+        
+        <!--Firebase-->
+        <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyD-dp4z8l9-3a3IU80qCXn_Hrzdu5vyBAI",
+            authDomain: "bizhack-d6dde.firebaseapp.com",
+            databaseURL: "https://bizhack-d6dde.firebaseio.com",
+            projectId: "bizhack-d6dde",
+            storageBucket: "bizhack-d6dde.appspot.com",
+            messagingSenderId: "879215915388"
+          };
+          firebase.initializeApp(config);
+        </script>
+        
+        <!-- Vendor Javascript -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        
+        <!-- AngularJS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
+        
+        <!-- Custom Javascript -->
+        <script src="js/main.js"></script>
+        
+        <!--Google Map-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwQHpeN7cecFRUlz4HrIW6dWarLzCE56U"></script>
+        <script src="js/vendor/ng-map.min.js"></script>
+        
+    </body>
+</html>
